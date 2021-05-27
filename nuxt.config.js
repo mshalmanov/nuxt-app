@@ -18,8 +18,26 @@ export default {
 	   }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+	/* {
+		hid: 'canonical',
+		rel: 'canonical',
+		href: 'https://jamstack-explorers-nuxt-mission/${this.$route.params.slug}',
+	  }, */
+	  
+	  {
+		rel: 'stylesheet',
+		href: 'https://fonts.googleapis.com/css?family=Nunito&display=swap'
+	  },
+	  
+	  { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+	
+	script: [
+	  {
+		src:       'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js', 
+	  }
+	],
+	
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

@@ -5,10 +5,8 @@
 	  <img :src="planet.image" alt="" />
       <h1 class="title">
         {{ planet.title }}
-      </h1>	  	  
-      <!-- <div class="links"> 
-		<NuxtLink to="/" class="button--blue">Home</NuxtLink>
-      </div> -->
+      </h1>
+	  <div class="planet-text">{{ planet.description }}</div>      
     </div>
   </div>
 </template>
@@ -43,6 +41,9 @@ export default {
 </script>
 
 <style>
+h1 {
+  font-family: Nunito, sans-serif;
+}
 img {
   height: 300px;
   width: auto;
@@ -56,6 +57,25 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.planet-text {
+  font-family:
+	'Nunito',
+    'Quicksand',
+    'Source Sans Pro',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 25px;
+  color: #35495e;
+  letter-spacing: 1px;
 }
 
 .title {
