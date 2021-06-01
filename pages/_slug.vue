@@ -3,10 +3,9 @@
     <div>	
       <!-- <Logo /> -->
 	  <img :src="planet.image" alt="" />
-      <h1 class="title">
-        {{ planet.title }}
-      </h1>
-	  <div class="planet-text">{{ planet.description }}</div>      
+      <h1 class="title">{{ planet.title }}</h1>	  
+	  <div class="planet-text">{{ planet.description }}</div> 
+	  <PlanetsList /> 	
     </div>
   </div>
 </template>
@@ -97,14 +96,10 @@ img {
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  #font-weight: 300;
+  #font-size: 42px;
+  #color: #526488;
+  #word-spacing: 5px;
+  #padding-bottom: 15px;
 }
 </style>

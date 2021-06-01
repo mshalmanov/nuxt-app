@@ -2,46 +2,15 @@
   <div class="container">
     <div>
       <Logo />
-      <h1 class="title">
-        nuxt-app
-      </h1>	  
-      <div class="links">
-		<p v-if="$fetchState.pending">Fetching planets...</p>
-		<p v-else-if="$fetchState.error">Error while fetching planets</p>
-	    <ul v-else>		  		
-		  <li class = "button--blue" v-for="planet in planets" :key="planet.slug">
-		    <NuxtLink :to="planet.slug">
-			  {{ planet.title }}
-			</NuxtLink>					
-		  </li>
-		  <li class = "button--blue"><NuxtLink to="/nuxt">Nuxt</NuxtLink></li>		  		
-		</ul>	
-		
-		<!--<a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a> -->     
-      </div>
+      <h1 class="title">nuxt-app</h1>
+	  <PlanetsList />      
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  async fetch() {
-    this.planets = await fetch('https://api.nuxtjs.dev/planets').then((res) => res.json()
-	)
-  },
-  data() {
-    return {
-	  planets: [],
-	}
-  }  
-}
+/*import PlanetsList from `~/components/PlanetsList` */
+export default {}
 </script>
 
 <style>
@@ -78,14 +47,10 @@ ul {
 }
 
 .subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  #font-weight: 300;
+  #font-size: 42px;
+  #color: #526488;
+  #word-spacing: 5px;
+  #padding-bottom: 15px;
 }
 </style>
