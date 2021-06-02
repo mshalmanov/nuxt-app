@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  transition: 'bounce',
   head() {
     return {
 	  title: this.planet.title,

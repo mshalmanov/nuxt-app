@@ -1,6 +1,76 @@
-nav {
-  text-align: center; 
+:root{
+  --primary: #35495e;
+  --secondary: #3b8070; 
 }
+
+nav {
+  text-align: center;  
+  font-size: 20px;  
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.nuxt-link-exact-active {
+  color: var(--secondary);	
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;	
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;	
+}
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: opacity 0.5s;  	
+}
+
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;	
+}
+
+.bounce-enter-active {
+  transform-origin: top;
+  animation: bounce-in 0.8s;  
+}
+
+.bounce-leave-active {
+  transform-origin: top;
+  animation: bounce-out 0.5s;  
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }	 
+  100% {
+    transform: scale(1);
+  }	   
+}
+
+@keyframes bounce-out {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }	 
+  100% {
+    transform: scale(0);
+  }	   
+}
+
 html {
   font-family:
     'Source Sans Pro',
