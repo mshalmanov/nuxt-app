@@ -77,8 +77,12 @@ dist
 # Serverless directories
 .serverless
 
-# IDE / Editor
+# Project files
 .idea
+nbproject
+nbproject/private
+.vscode/
+.vs/
 
 # Service worker
 sw.*
