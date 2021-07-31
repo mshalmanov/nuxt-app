@@ -1,5 +1,7 @@
 # PAGES
 
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/start/#lavender-lynx-jbsi4dng/)
+
 This directory contains your Application Views and Routes.
 The framework reads all the `*.vue` files inside this directory and creates the router of your application.
 
