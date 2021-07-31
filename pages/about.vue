@@ -2,12 +2,10 @@
   <div class="container">  
     <div>	
       <Logo />
-      <h1 class="title">
-        about
-      </h1>
-      <!-- <div class="links"> 
-		<NuxtLink to="/">Home</NuxtLink>
-      </div> -->
+      <h2 class="title">
+        About
+      </h2>
+      <p>This is site for learn space planet in the our sun system.</p>
     </div>
   </div>
 </template>
